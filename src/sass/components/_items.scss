@@ -1,0 +1,66 @@
+@use '../abstracts/' as *;
+@use '../base/animations';
+
+input#sloth:checked ~ .container {
+  @include makeAnimal(30, $bg-sloth, $path-sloth);
+  .triangle:nth-child(28) {
+    animation: slothHandMove 6s infinite;
+  }
+}
+
+input#whale:checked ~ .container {
+  @include makeAnimal(30, $bg-whale, $path-whale);
+
+  .triangle {
+    animation: whaleSwim 3s alternate infinite;
+  }
+
+  .triangle:nth-child(11) {
+    animation: whaleFlipperRMove 3s alternate infinite;
+  }
+  .triangle:nth-child(17) {
+    animation: whaleFlipperLUpMove 3s alternate infinite;
+  }
+  .triangle:nth-child(20) {
+    animation: whaleFlipperLDownMove 3s alternate infinite;
+  }
+}
+
+input#bear:checked ~ .container {
+  @include makeAnimal(30, $bg-bear, $path-bear);
+
+  .triangle:nth-child(1) {
+    animation: bearSnoutMove 1s infinite alternate;
+  }
+  .triangle:nth-child(2) {
+    animation: bearNoseMove 1s infinite alternate;
+  }
+  .triangle:nth-child(21) {
+    animation: bearArmRMove 1s infinite alternate;
+  }
+  .triangle:nth-child(30) {
+    animation: bearArmLMove 1s infinite alternate;
+  }
+}
+
+input#frog:checked ~ .container {
+  @include makeAnimal(30, $bg-frog, $path-frog);
+
+  .triangle:nth-child(11) {
+    animation: frogLowerEyeMove 6s infinite alternate;
+  }
+  .triangle:nth-child(12) {
+    animation: frogUpperEyeMove 6s infinite alternate;
+  }
+  .triangle:nth-child(28) {
+    animation: frogVocalMove 6s infinite alternate;
+  }
+}
+
+input#ostrich:checked ~ .container {
+  @include makeAnimal(30, $bg-ostrich, $path-ostrich);
+
+  .triangle:nth-child(1) {
+    animation: ostrichTailMove 2s infinite alternate;
+  }
+}

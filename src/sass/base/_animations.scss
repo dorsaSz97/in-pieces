@@ -1,0 +1,195 @@
+// OPTIONS
+@keyframes rotateOptions {
+  from {
+    transform: perspective(1000px) rotateX(43deg) translateZ(70px) rotate(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(43deg) translateZ(70px)
+      rotate(360deg);
+  }
+}
+
+// LABELS TURN
+// these have to rotate at the same rate as their container so that their text is always straight
+@keyframes rotateItemBear {
+  from {
+    transform: translateX(50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotateItemFrog {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotateItemOstrich {
+  from {
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, 0) rotate(-360deg);
+  }
+}
+
+@keyframes rotateItemSloth {
+  from {
+    transform: translate(50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes rotateItemWhale {
+  from {
+    transform: translateX(50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(50%) rotate(-360deg);
+  }
+}
+
+// SLOTH
+@keyframes slothHandMove {
+  0% {
+    clip-path: polygon(527px 357px, 585px 347px, 594px 336px);
+  }
+  50% {
+    clip-path: polygon(527px 357px, 585px 347px, 596px 386px);
+  }
+  100% {
+    clip-path: polygon(527px 357px, 585px 347px, 594px 336px); //maybe
+  }
+}
+
+// WHALE
+@keyframes whaleSwim {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes whaleFlipperRMove {
+  0% {
+    clip-path: polygon(221px 320px, 267px 320px, 269px 374px);
+  }
+  100% {
+    clip-path: polygon(200px 319px, 246px 317px, 282px 351px);
+  }
+}
+
+@keyframes whaleFlipperLUpMove {
+  0% {
+    clip-path: polygon(229px 291px, 309px 344px, 314px 307px);
+  }
+  100% {
+    clip-path: polygon(209px 291px, 314px 339px, 295px 307px);
+  }
+}
+
+@keyframes whaleFlipperLDownMove {
+  0% {
+    clip-path: polygon(229px 291px, 309px 344px, 335px 385px);
+  }
+  100% {
+    clip-path: polygon(209px 291px, 314px 339px, 356px 367px);
+  }
+}
+
+// FROG
+@keyframes frogUpperEyeMove {
+  0% {
+    clip-path: polygon(235px 189px, 247px 193px, 277px 201px);
+  }
+  30% {
+    clip-path: polygon(235px 189px, 247px 209px, 277px 201px);
+  }
+  60% {
+    clip-path: polygon(235px 189px, 247px 193px, 277px 201px);
+  }
+  90% {
+    clip-path: polygon(235px 189px, 247px 209px, 277px 201px);
+  }
+}
+
+@keyframes frogLowerEyeMove {
+  0% {
+    clip-path: polygon(235px 189px, 258px 195px, 277px 201px);
+  }
+  30% {
+    clip-path: polygon(235px 189px, 258px 181px, 277px 201px);
+  }
+  60% {
+    clip-path: polygon(235px 189px, 258px 195px, 277px 201px);
+  }
+  90% {
+    clip-path: polygon(235px 189px, 258px 181px, 277px 201px);
+  }
+}
+
+@keyframes frogVocalMove {
+  0% {
+    clip-path: polygon(197px 196px, 210px 220px, 269px 250px);
+  }
+  30% {
+    clip-path: polygon(197px 196px, 210px 240px, 269px 250px);
+  }
+  100% {
+    clip-path: polygon(197px 196px, 210px 220px, 269px 250px); //maybe
+  }
+}
+
+// BEAR
+@keyframes bearNoseMove {
+  from {
+    clip-path: polygon(214px 83px, 220px 78px, 220px 88px);
+  }
+  to {
+    clip-path: polygon(214px 80px, 220px 75px, 220px 85px);
+  }
+}
+@keyframes bearSnoutMove {
+  from {
+    clip-path: polygon(214px 83px, 236px 63px, 236px 100px);
+  }
+
+  to {
+    clip-path: polygon(214px 80px, 236px 60px, 236px 97px);
+  }
+}
+@keyframes bearArmRMove {
+  from {
+    clip-path: polygon(270px 223px, 288px 265px, 302px 198px);
+  }
+  to {
+    clip-path: polygon(263px 233px, 281px 275px, 302px 198px);
+  }
+}
+@keyframes bearArmLMove {
+  from {
+    clip-path: polygon(391px 220px, 444px 218px, 345px 250px);
+  }
+  to {
+    clip-path: polygon(391px 220px, 444px 218px, 345px 303px);
+  }
+}
+
+// OSTRICH
+@keyframes ostrichTailMove {
+  from {
+    clip-path: polygon(187px 144px, 196px 199px, 243px 174px);
+  }
+  to {
+    clip-path: polygon(210px 144px, 196px 199px, 243px 174px);
+  }
+}

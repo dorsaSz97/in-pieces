@@ -1,0 +1,11 @@
+@mixin makeAnimal($pieces, $bg, $path) {
+  // we have 30 pieces in each slide
+  @for $i from 1 through $pieces {
+    .triangle:nth-child(#{$i}) {
+      background-color: nth($bg, $i);
+      clip-path: nth($path, $i);
+      transition: all 0.7s;
+      transition-delay: #{$i * 0.1}s;
+    }
+  }
+}
