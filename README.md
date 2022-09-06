@@ -1,4 +1,4 @@
-# In Pieces Project (not responsive)
+# In Pieces (not responsive)
 
 This is a mini project inspired by In Pieces... Website.
 
